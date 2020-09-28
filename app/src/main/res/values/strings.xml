@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <array name="spinner2">
+        <item>No presenta</item>
+        <item>Usa minimamente inhaladores</item>
+        <item>Usa frecuentemente inhaladores</item>
+    </array>
+    <array name="spinner3">
+        <item>No presenta</item>
+        <item>Leve (sin uso de CPAP)</item>
+        <item>Requiere uso de CPAP</item>
+        <item>entre 121-180min</item>
+        <item>más de 180min</item>
+    </array>
+    <array name="spinner4">
+        <item>No presenta</item>
+        <item>Minima sin medicamentos</item>
+        <item>Leve (1 medicamento)</item>
+        <item>Moderada (2 medicamentos)</item>
+        <item>Severa (3 o más medicamentos)</item>
+    </array>
+    <array name="spinner5">
+        <item>No presenta</item>
+        <item>Leve (sin medicamentos)</item>
+        <item>Moderada (medicamentos orales)</item>
+        <item>Severa (uso de insulina)</item>
+    </array>
+    <array name="spinner6">
+        <item>No presenta</item>
+        <item>Leve</item>
+        <item>Moderada</item>
+        <item>Severa</item>
+    </array>
+    <array name="spinner7">
+        <item>Asintomático</item>
+        <item>No presenta</item>
+        <item>Sintomático</item>
+    </array>
+    <array name="spinner_8">
+        <item>No</item>
+        <item>Probablemente no</item>
+        <item>Posiblemente</item>
+        <item>Probablemente si</item>
+        <item>Si</item>
+    </array>
+
+    <array name="spinner2_E">
+        <item>No disponibilidad</item>
+        <item>Disponible, menor al 40% de efectividad</item>
+        <item>Disponible, 40-60% efectividad</item>
+        <item>Disponible, 60-95% efectividad</item>
+        <item>Disponible, 100% efectividad</item>
+    </array>
+    <array name="spinner3_E">
+        <item>No aplicable</item>
+        <item>Inferior al manejo quirúrgico</item>
+        <item>Eqiovalente al manejo quirúrgico</item>
+        <item>Posiblemente mejor que el manejo quirúrgico</item>
+        <item>Superior al manejo quirúrgico</item>
+    </array>
+    <array name="spinner4_E">
+        <item>No hay impacto negativo</item>
+        <item>Impacto significativamente negativo</item>
+        <item>Impacto negativo</item>
+        <item>Impacto moderadamente negativo</item>
+        <item>Impacto minimamente negativo</item>
+    </array>
+    <array name="spinner5_E">
+        <item>No hay impacto negativo</item>
+        <item>Impacto significativamente negativo</item>
+        <item>Impacto negativo</item>
+        <item>Impacto moderadamente negativo</item>
+        <item>Impacto minimamente negativo</item>
+    </array>
+    <array name="spinner6_E">
+        <item>No hay impacto negativo</item>
+        <item>Impacto significativamente negativo</item>
+        <item>Impacto negativo</item>
+        <item>Impacto moderadamente negativo</item>
+        <item>Impacto minimamente negativo</item>
+    </array>
+    <array name="spinner7_E">
+        <item>No hay impacto negativo</item>
+        <item>Impacto significativamente negativo</item>
+        <item>Impacto negativo</item>
+        <item>Impacto moderadamente negativo</item>
+        <item>Impacto minimamente negativo</item>
+    </array>
+    <string name="text_1_q_1">Tiempo estimado de procedimiento quirúrgico</string>
+    <string name="text_2_q_1">Timepo de hospitalización estimado</string>
+    <string name="text_3_q_1">¿Qué tan probable es que necesite UCI?</string>
+    <string name="text_4_q_1">Pérdida sanguínea estimada (en cc)</string>
+    <string name="text_5_q_1">Personas requeridas en quirofano</string>
+    <string name="text_6_q_1">¿Qué tan probable es que necesite entubación</string>
+    <string name="text_7_q_1">¿Qué tipo de cirugía se requiere?</string>
+    <string name="next">Next</string>
+
+    <array name="options_1_q_1">
+        <item>Menos de 30min</item>
+        <item>Entre 31-60min</item>
+        <item>Entre 61-120min</item>
+        <item>Entre 121-180min</item>
+        <item>Más de 180min</item>
+    </array>
+    <array name="options_2_q_1">
+        <item>Ambulatorio</item>
+        <item>Menos de 23h</item>
+        <item>Entre 24-48h</item>
+        <item>Entre 2-3 días</item>
+        <item>Más de 4 días</item>
+    </array>
+    <array name="options_3_q_1">
+        <item>Poco probable</item>
+        <item>menor al 5%</item>
+        <item>Entre 5-10%</item>
+        <item>Entre 11-25%</item>
+        <item>Mayor al 25%</item>
+    </array>
+    <array name="options_4_q_1">
+        <item>Menor a 100cc</item>
+        <item>Entre 100-250cc</item>
+        <item>Entre 250-500cc</item>
+        <item>Entre 500-750cc</item>
+        <item>Mayor a 751cc</item>
+    </array>
+    <array name="options_5_q_1">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+    <array name="options_6_q_1">
+        <item>Menor al 1%</item>
+        <item>Entre el 1-5%</item>
+        <item>Entre el 6-10%</item>
+        <item>Entre el 11-25%</item>
+        <item>Mayor al 25%</item>
+    </array>
+    <string name="action_settings">Settings</string>
+
+</resources>
