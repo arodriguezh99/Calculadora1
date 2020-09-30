@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,8 +26,10 @@ public class vprocedimiento extends Fragment {
         view.findViewById(R.id.button_next_vprocedimiento).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                vprocedimientoDirections.ActionVprocedimientoToResultado action = vprocedimientoDirections.actionVprocedimientoToResultado();
+                action.getPuntaje3();
                 NavHostFragment.findNavController(vprocedimiento.this)
-                        .navigate(R.id.action_vprocedimiento_to_resultado);
+                        .navigate(action);
             }
         });
 

@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -32,7 +31,15 @@ public class bienvenida extends Fragment{
                         .navigate(R.id.action_bienvenida_to_vpaciente22);
             }
         });
-
+        /*
+        *view.findViewById(R.id.button_next_bienvenida).setOnClickListener(new View.OnClickListener() {
+        *    @Override
+        *    public void onClick(View view) {
+        *       bienvenidaDirections.ActionBienvenidaToVpaciente22 action = bienvenidaDirections.actionBienvenidaToVpaciente22();
+        *        NavHostFragment.findNavController(bienvenida.this).navigate(action);
+        *    }
+        *});
+        */
     }
 
 }

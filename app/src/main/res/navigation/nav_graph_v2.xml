@@ -22,6 +22,10 @@
         <action
             android:id="@+id/action_venfermedad_to_vprocedimiento"
             app:destination="@id/vprocedimiento" />
+        <argument
+            android:name="puntaje"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/vpaciente2"
@@ -40,6 +44,10 @@
         <action
             android:id="@+id/action_vprocedimiento_to_resultado"
             app:destination="@id/resultado" />
+        <argument
+            android:name="puntaje2"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/resultado"
@@ -49,5 +57,9 @@
         <action
             android:id="@+id/action_resultado_to_bienvenida"
             app:destination="@id/bienvenida" />
+        <argument
+            android:name="puntaje3"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
 </navigation>
