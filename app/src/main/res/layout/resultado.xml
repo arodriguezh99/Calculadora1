@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/result_layout">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -14,9 +13,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.391"
-        app:srcCompat="@drawable/fatigue" />
+        app:srcCompat="@drawable/fatigue"
+        android:contentDescription="@string/imagen_fatiga_desc" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -28,7 +28,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.377"
-        app:srcCompat="@drawable/patient" />
+        app:srcCompat="@drawable/patient"
+        android:contentDescription="@string/paciente_imagen_desc" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -40,7 +41,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.389"
-        app:srcCompat="@drawable/surgeon" />
+        app:srcCompat="@drawable/surgeon"
+        android:contentDescription="@string/imagen_cirugia_desc" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -52,10 +54,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/hospital" />
+        app:srcCompat="@drawable/hospital"
+        android:contentDescription="@string/imagen_hospital_desc" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/result_layout_toolbar"
         android:layout_width="409dp"
         android:layout_height="235dp"
         android:background="#FFFFFF"
@@ -70,7 +73,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="El resultado de su puntaje es:"
+            android:text="@string/text_resultado_final"
             android:textColor="@color/design_default_color_background"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -85,7 +88,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="33"
+            android:text="@string/resultado_num"
             android:textColor="@color/design_default_color_background"
             android:textSize="36sp"
             android:textStyle="bold"
