@@ -255,5 +255,6 @@
     </string>
     <string name="options_7_q_1">Factores asociados al procedimiento</string>
     <string name="text_q10_p2">Enfermedades asociadas</string>
+    <string name="text_button_final">Empezar de nuevo</string>
 
 </resources>

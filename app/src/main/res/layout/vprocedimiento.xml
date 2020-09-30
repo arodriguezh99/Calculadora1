@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:id="@+id/vProcedimiento_layout"
-    tools:context=".ScrollingActivity"
+    tools:context=".vprocedimiento"
     tools:ignore="MissingDefaultResource">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -28,7 +28,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/button_next_vprocedimiento"
                     android:layout_width="90dp"
                     android:layout_height="49dp"
                     android:text="@string/button_next_text"

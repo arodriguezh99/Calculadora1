@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph_v2" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_v2"
+    app:startDestination="@id/bienvenida"
+    tools:ignore="UnusedNavigation">
+    <fragment
+        android:id="@+id/bienvenida"
+        android:name="com.example.myapplication.bienvenida"
+        android:label="bienvenida"
+        tools:layout="@layout/bienvenida" >
+        <action
+            android:id="@+id/action_bienvenida_to_vpaciente22"
+            app:destination="@id/vpaciente2" />
+    </fragment>
+    <fragment
+        android:id="@+id/venfermedad"
+        android:name="com.example.myapplication.venfermedad"
+        android:label="venfermedad"
+        tools:layout="@layout/venfermedad" >
+        <action
+            android:id="@+id/action_venfermedad_to_vprocedimiento"
+            app:destination="@id/vprocedimiento" />
+    </fragment>
+    <fragment
+        android:id="@+id/vpaciente2"
+        android:name="com.example.myapplication.vpaciente"
+        android:label="vpaciente"
+        tools:layout="@layout/vpaciente" >
+        <action
+            android:id="@+id/action_vpaciente2_to_venfermedad"
+            app:destination="@id/venfermedad" />
+    </fragment>
+    <fragment
+        android:id="@+id/vprocedimiento"
+        android:name="com.example.myapplication.vprocedimiento"
+        android:label="vprocedimiento"
+        tools:layout="@layout/vprocedimiento" >
+        <action
+            android:id="@+id/action_vprocedimiento_to_resultado"
+            app:destination="@id/resultado" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultado"
+        android:name="com.example.myapplication.resultado"
+        android:label="resultado"
+        tools:layout="@layout/resultado" >
+        <action
+            android:id="@+id/action_resultado_to_bienvenida"
+            app:destination="@id/bienvenida" />
+    </fragment>
+</navigation>
