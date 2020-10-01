@@ -22,8 +22,11 @@
         <action
             android:id="@+id/action_venfermedad_to_vprocedimiento"
             app:destination="@id/vprocedimiento" />
+        <action
+            android:id="@+id/action_venfermedad_to_resultado"
+            app:destination="@id/resultado" />
         <argument
-            android:name="puntaje"
+            android:name="puntaje_enfermedad"
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>
@@ -35,6 +38,13 @@
         <action
             android:id="@+id/action_vpaciente2_to_venfermedad"
             app:destination="@id/venfermedad" />
+        <action
+            android:id="@+id/action_vpaciente2_to_resultado"
+            app:destination="@id/resultado" />
+        <argument
+            android:name="puntaje_paciente"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/vprocedimiento"
@@ -45,7 +55,7 @@
             android:id="@+id/action_vprocedimiento_to_resultado"
             app:destination="@id/resultado" />
         <argument
-            android:name="puntaje2"
+            android:name="puntaje_procedimiento"
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>
@@ -58,7 +68,14 @@
             android:id="@+id/action_resultado_to_bienvenida"
             app:destination="@id/bienvenida" />
         <argument
-            android:name="puntaje3"
+            android:name="puntaje_procedimiento"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="puntaje_enfermedad"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument android:name="puntaje_paciente"
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>

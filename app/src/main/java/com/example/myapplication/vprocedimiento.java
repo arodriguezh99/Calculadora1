@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 public class vprocedimiento extends Fragment {
+    int puntaje_procedimiento = 0;
     @Override
 
     public View onCreateView(
@@ -27,7 +28,7 @@ public class vprocedimiento extends Fragment {
             @Override
             public void onClick(View view) {
                 vprocedimientoDirections.ActionVprocedimientoToResultado action = vprocedimientoDirections.actionVprocedimientoToResultado();
-                action.getPuntaje3();
+                action.setPuntajeProcedimiento(puntaje_procedimiento);
                 NavHostFragment.findNavController(vprocedimiento.this)
                         .navigate(action);
             }

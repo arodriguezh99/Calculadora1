@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 public class vpaciente extends Fragment {
+    int puntaje_paciente = 22;
     @Override
 
     public View onCreateView(
@@ -28,7 +29,8 @@ public class vpaciente extends Fragment {
             @Override
             public void onClick(View view) {
                 vpacienteDirections.ActionVpaciente2ToVenfermedad action = vpacienteDirections.actionVpaciente2ToVenfermedad();
-                action.setPuntaje();
+                vpacienteDirections.ActionVpaciente2ToResultado action2 = vpacienteDirections.actionVpaciente2ToResultado();
+                action2.setPuntajePaciente(puntaje_paciente);
                 NavHostFragment.findNavController(vpaciente.this)
                         .navigate(action);
 

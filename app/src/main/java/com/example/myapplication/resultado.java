@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 public class resultado extends Fragment {
+    int puntaje_final = 0;
     @Override
 
     public View onCreateView(
@@ -24,8 +25,11 @@ public class resultado extends Fragment {
     public void onViewCreated(@NonNull final View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TextView resultado = view.findViewById(R.id.textRes);
-        int puntaje = resultadoArgs.fromBundle(getArguments()).getPuntaje3();
-        resultado.setText(puntaje);
+        int puntaje_paciente = resultadoArgs.fromBundle(getArguments()).getPuntajePaciente();
+        int puntaje_procedimiento = resultadoArgs.fromBundle(getArguments()).getPuntajeProcedimiento();
+        int puntaje_enfermdedad = resultadoArgs.fromBundle(getArguments()).getPuntajeEnfermedad();
+        int puntaje_final = puntaje_paciente + puntaje_procedimiento + puntaje_enfermdedad;
+        resultado.setText(puntaje_final);
 
         view.findViewById(R.id.button_next_result).setOnClickListener(new View.OnClickListener() {
             @Override
